@@ -1,0 +1,8 @@
+<h1>Thanks for submitting the form!</h1>
+<p>Name: {{ request.session.name }}</p>
+<p>Dojo Location: {{ request.session.location }}</p>
+<p>Favorite Language: {{ request.session.favoritelanguage }}</p>
+<p>Comment: {{ request.session.comment }}</p>
+<form action="/surveys/">
+    <input type="submit" value="Go Back">
+</form>

@@ -1,0 +1,35 @@
+<table>
+    <form action="/surveys/process/" , method="POST">
+        {% csrf_token %}
+        <tr>
+            <td>Your Name:</td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Dojo Location:</td>
+            <td>
+                <select name="location" id="location">
+                <option value="Washington DC">Washington DC</option>
+                <option value="Seattle">Seattle</option>
+                <option value="San Francisco">San Francisco</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Favorite Language</td>
+            <td>
+                <select name="favoritelanguage" id="favoritelanguage">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Javascript">Javascript</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+           <td colspan="2"><textarea name="comment" id="comment" cols="60" rows="3"></textarea></td> 
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+    </form>
+</table>
